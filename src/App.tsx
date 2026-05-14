@@ -12,7 +12,7 @@ function App() {
       <main className="relative z-10 flex w-full flex-1 flex-col items-center justify-center px-4 py-6 sm:px-6 sm:py-10 lg:py-5">
         <div className="w-full max-w-md rounded-[1.75rem] border border-white/40 bg-white/95 p-6 shadow-2xl shadow-slate-900/20 backdrop-blur-sm sm:max-w-lg sm:rounded-3xl sm:p-8 lg:max-w-3xl lg:p-6 xl:max-w-4xl">
           <div className="mb-6 text-center sm:mb-10 lg:mb-4">
-            <h1 className="mb-2 font-serif text-3xl font-bold text-slate-900 sm:text-4xl">
+            <h1 className="mb-2 font-serif text-3xl font-bold tracking-normal text-slate-900 [text-rendering:optimizeLegibility] sm:text-4xl">
               LỄ TỐT NGHIỆP
             </h1>
             <p className="text-xl font-light italic text-slate-500">
@@ -45,9 +45,6 @@ function App() {
           </div>
 
           <div className="mt-6 sm:mt-10 lg:mt-5">
-            <p className="mb-6 text-center text-sm leading-relaxed text-slate-600 sm:mb-8 sm:text-base lg:mb-4">
-              &ldquo;.&rdquo;
-            </p>
 
             <button
               type="button"

@@ -1,5 +1,10 @@
 @import "tailwindcss";
 
+@theme {
+  /* Serif mặc định của Tailwind (Georgia/Times) hay lỗi dấu tiếng Việt trên Windows */
+  --font-serif: "Noto Serif", Georgia, "Times New Roman", serif;
+}
+
 html,
 body,
 #root {
