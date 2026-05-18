@@ -57,4 +57,49 @@
     animation: none;
     background-position: 50% 50%;
   }
+
+  .rotate-phone-icon {
+    animation: none;
+  }
+}
+
+@keyframes rotate-phone-hint {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+  40% {
+    transform: rotate(-90deg);
+  }
+  60% {
+    transform: rotate(-90deg);
+  }
+}
+
+.rotate-phone-icon {
+  animation: rotate-phone-hint 2.2s ease-in-out infinite;
+}
+
+/*
+  Mobile dọc: xoay khung ảnh -90° để GIF ngang hiển thị rõ
+  (dù người dùng vẫn cầm máy dọc). Mobile ngang / tablet / laptop: bình thường.
+*/
+@media (max-width: 767px) and (orientation: portrait) {
+  .map-mobile-landscape {
+    transform: rotate(90deg);
+    width: fit-content;
+    height: fit-content;
+    max-width: none;
+    border-radius: 0.75rem;
+  }
+
+  /* Giữ giới hạn kích thước ảnh bạn đã chỉnh; khung ôm theo ảnh */
+  .map-mobile-landscape-img {
+    display: block;
+    width: auto;
+    height: auto;
+    max-width: 80dvh;
+    max-height: 92dvw;
+    object-fit: contain;
+  }
 }

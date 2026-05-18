@@ -17,20 +17,20 @@ function App() {
       <main className="relative z-10 flex w-full flex-1 flex-col items-center justify-center px-4 py-6 sm:px-6 sm:py-10 lg:py-5">
         <div className="w-full max-w-md rounded-[1.75rem] border border-white/40 bg-white/95 p-6 shadow-2xl shadow-slate-900/20 backdrop-blur-sm sm:max-w-lg sm:rounded-3xl sm:p-8 lg:max-w-3xl lg:p-6 xl:max-w-4xl">
           <div className="mb-6 text-center sm:mb-10 lg:mb-4">
-            <h1 className="mb-2 font-serif text-3xl font-bold tracking-normal text-slate-900 [text-rendering:optimizeLegibility] sm:text-4xl">
+            <h1 className="mt-8 mb-5 font-serif text-5xl font-bold tracking-normal text-slate-900 [text-rendering:optimizeLegibility] sm:text-4xl">
               LỄ TỐT NGHIỆP
             </h1>
-            <p className="text-xl font-light italic text-slate-500">
+            <p className="text-2xl font-light italic text-slate-500">
               Vũ Văn Hậu
             </p>
           </div>
 
-          <div className="grid grid-cols-1 gap-6 border-y border-stone-100 py-8 text-center sm:gap-8 sm:py-10 lg:grid-cols-2 lg:items-start lg:gap-10 lg:py-5 lg:text-left">
+          <div className="grid grid-cols-1 gap-6 border-y border-stone-100 py-6 text-center sm:gap-8 sm:py-10 lg:grid-cols-2 lg:items-start lg:gap-10 lg:py-5 lg:text-left">
             <div className="text-center items-center justify-center">
-              <p className="mb-2 text-[0.75rem] uppercase tracking-[0.2em] text-stone-400 ">
+              <p className="mb-2 text-[0.85rem] uppercase tracking-[0.2em] text-stone-400 ">
                 Thời gian
               </p>
-              <p className="text-base font-medium sm:text-lg">
+              <p className="text-lg font-medium sm:text-lg">
                 10:00 AM — Thứ Bảy
               </p>
               <p className="font-serif text-xl font-bold text-slate-800 sm:text-2xl">
@@ -39,16 +39,17 @@ function App() {
             </div>
 
             <div className="text-center" >
-              <p className="mb-2 text-[0.75rem] uppercase tracking-[0.2em] text-stone-400">
+              <p className="mb-2 text-[0.85rem] uppercase tracking-[0.2em] text-stone-400">
                 Địa điểm
               </p>
-              <p className="text-base font-medium sm:text-lg">Hội trường A2</p>
-              <p className="text-sm text-slate-600 sm:text-base">
-                Học viện Công nghệ Bưu chính Viễn thông
+              <p className="text-lg font-medium sm:text-lg">Hội trường A2</p>
+              <p className="text-lg text-slate-600 sm:text-base">
+                Học viện Công nghệ <br className="lg:hidden" />
+                Bưu chính Viễn thông
               </p>
             </div>
           </div>
-
+        
           <div className="mt-6 sm:mt-10 lg:mt-5">
 
             <button
@@ -65,7 +66,7 @@ function App() {
       </main>
 
       <footer className="relative z-10 shrink-0 px-4 pb-[max(1.25rem,env(safe-area-inset-bottom))] pt-2 text-center text-[0.65rem] uppercase tracking-widest text-white/75">
-        Design by Van Hau • 2026
+        2026
       </footer>
     </div>
   );
